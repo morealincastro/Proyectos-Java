@@ -11,16 +11,19 @@ package javaapplication33;
  */
 public class Saiyajin extends Extraterrestre {
     
-        public Saiyajin (int energia, int cantidadAliados) {
+        public Saiyajin (int energia) {
         super(energia);
         this.energia= energia;
         this.planeta = "vegueta";
-        this.cantidadAliados=cantidadAliados;
     }
         
       @Override
      public int comer(){
-         this.energia = (energia + (100*this.cantidadAliados))*2;
+         this.energia = (energia + (100*cantidadAliados(this.aliados)))*2;
          return energia;
     }
+     
+         public void agregarAliado(Personaje aliado){
+         this.aliados.add(aliado);
+}
 }

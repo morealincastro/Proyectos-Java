@@ -18,7 +18,7 @@ public class JavaApplication33 {
      */
     public static void main(String[] args) {
         
-        Extraterrestre namekiano = new Namekiano(10,2);
+      /*  Extraterrestre namekiano = new Namekiano(10,2);
          Extraterrestre saiyajin = new Saiyajin(10,2);
          Terricola terricola = new Terricola(10);
          
@@ -37,6 +37,6 @@ public class JavaApplication33 {
          System.out.print(invitado.energia);
      }
     
+}*/
 }
 }
-    

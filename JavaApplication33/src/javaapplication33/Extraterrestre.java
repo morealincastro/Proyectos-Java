@@ -5,24 +5,25 @@
  */
 package javaapplication33;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Morella
  */
 public class Extraterrestre extends Personaje {
-    int cantidadAliados;
+ 
+    ArrayList<Personaje> aliados = new ArrayList();
 
-    public int getCantidadAliados() {
-        return cantidadAliados;
-    }
-
-    public void setCantidadAliados(int cantidadAliados) {
-        this.cantidadAliados = cantidadAliados;
-    }
     
     public Extraterrestre(int CantidadAliados){
         super();
-        this.cantidadAliados = cantidadAliados;
     }
     
+    public void agregarAliado(Personaje aliado){
+    
+}
+        public int cantidadAliados(ArrayList aliados){
+        return aliados.size();
+    }
 }

@@ -5,24 +5,30 @@
  */
 package javaapplication33;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Morella
  */
 public class Namekiano extends Extraterrestre {
 
-    public Namekiano(int energia, int cantidadAliados) {
+    public Namekiano(int energia) {
         super(energia);
         this.energia= energia;
         this.planeta="namekusei";
-        this.cantidadAliados=cantidadAliados;
     }
+    
+
     
     @Override
-    
-    
+   
      public int comer(){
-         this.energia = energia + 100*this.cantidadAliados + 10;
+         this.energia = energia + 100*cantidadAliados(this.aliados) + 10;
          return energia;
     }
+     
+     public void agregarAliado(Personaje aliado){
+         this.aliados.add(aliado);
+}
 }
